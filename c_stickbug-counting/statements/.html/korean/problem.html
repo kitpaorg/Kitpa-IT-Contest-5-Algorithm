@@ -1,0 +1,35 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>자벌레 세기</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">자벌레 세기</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>2 seconds</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>1024 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>$$$N$$$개의 정점으로 구성된 트리가 있습니다. 트리는 간선에 방향이 없는 연결된 그래프로, 각 정점에서 다른 정점으로 가는 최단 경로가 유일합니다.</P><P>어떤 $$$6$$$개의 <SPAN class="tex-font-style-bf">서로 다른</SPAN> 정점 $$$(u,v,w,x,y,z)$$$가 다음 조건을 모두 만족할 경우 그러한 $$$6$$$개의 정점으로 구성된 그래프를 <SPAN class="tex-font-style-bf">자벌레</SPAN>라고 합니다.</P><P></P><UL> <LI> $$$u$$$와 $$$v$$$가 간선으로 직접 연결되어 있습니다. </LI><LI> $$$w,x,y,z$$$ 중 $$$2$$$개는 $$$u$$$와, 나머지 $$$2$$$개는 $$$v$$$와 간선으로 직접 연결되어 있습니다. </LI></UL><P></P><P>이때, 두 자벌레 $$$A$$$와 $$$B$$$에 대해, $$$A$$$에 포함되어 있으면서 $$$B$$$에 포함되지 않은 정점이 존재한다면 $$$A$$$와 $$$B$$$는 <SPAN class="tex-font-style-bf">서로 다른</SPAN> 자벌레로 취급합니다.</P><P>예를 들어, 다음 그림에 주어진 트리에 대해, 빨간색으로 색칠된 간선으로 연결된 $$$6$$$개의 정점이 자벌레의 예시입니다.</P><P></P><CENTER> <IMG class="tex-graphics" src="f5cbf42eda3e34bbe1f02823946413bbd3caed35.png" style="zoom: 50.0%;"> </CENTER><P></P><P>위의 트리에는 서로 다른 자벌레가 총 $$$6$$$개 존재합니다.</P><P>입력으로 주어진 트리에 대해서, 트리에 존재하는 서로 다른 자벌레의 수를 구하는 프로그램을 작성해 주세요.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>첫 번째 줄에 트리를 구성하는 정점의 개수 $$$N$$$이 주어집니다.</P><P>두 번째 줄부터 $$$N-1$$$개의 줄에 걸쳐 각각의 간선이 연결하는 두 정점의 번호 $$$u_i$$$, $$$v_i$$$가 공백으로 구분되어 주어집니다.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>입력으로 주어진 트리에 존재하는 서로 다른 자벌레의 수를 한 줄에 출력합니다.</P></DIV><P></P><P></P><DIV class="scoring"><DIV class="section-title">Scoring</DIV><P></P><P>제한:</P><P></P><UL> <LI> $$$2 \le N \le 300\,000$$$ </LI><LI> $$$1 \le u_i,v_i \le N$$$ </LI><LI> $$$u_i \neq v_i$$$ </LI><LI> 주어진 그래프는 올바른 트리임이 보장됩니다. </LI><LI> <SPAN class="tex-font-style-bf">주어진 트리에 존재하는 서로 다른 자벌레의 수는 $$$10^{18}$$$을 초과하지 않음이 보장됩니다.</SPAN> </LI></UL><P></P><P>서브태스크:</P><P><TABLE class="tex-tabular"><TBODY><TR><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom"><SPAN class="tex-font-style-bf">번호</SPAN></TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom"><SPAN class="tex-font-style-bf">배점</SPAN></TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom"><SPAN class="tex-font-style-bf">제한</SPAN></TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">1</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">13</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$N \le 300$$$</TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">2</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">37</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$N \le 3000$$$</TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">3</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">7</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">각 $$$1 \le i \le N-1$$$에 대해 $$$u_i=1$$$ 또는 $$$u_i=i$$$이며 $$$v_i=i+1$$$</TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">4</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">43</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">추가 제한 없음</TD></TR></TBODY></TABLE></P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="15
+1 2
+2 3
+4 3
+3 5
+5 7
+6 7
+7 8
+7 9
+5 10
+10 11
+10 12
+12 13
+12 14
+14 15
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">15</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 2</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">2 3</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">4 3</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">3 5</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">5 7</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">6 7</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">7 8</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">7 9</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">5 10</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">10 11</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">10 12</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">12 13</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">12 14</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">14 15</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+6
+</PRE></DIV></DIV></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

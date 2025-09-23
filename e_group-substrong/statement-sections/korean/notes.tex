@@ -1,0 +1,11 @@
+예제의 각 질문에 대해 새로운 문자열 $X$의 내용, 새롭게 만들 수 있는 그룹 문자열, 그리고 $f(X)$의 값은 다음과 같습니다.
+
+\begin{tabular}{|l|l|l|l|} \hline
+  \textbf{질문} & \textbf{문자열 $X$} & \textbf{새롭게 만들 수 있는 그룹 문자열} & $f(X)$ \\ \hline
+  \texttt{1} $1$ & "\texttt{1}" & "\texttt{1}" & $1$ \\ \hline
+  \texttt{0} $1$ & "\texttt{10}" & "\texttt{0}", "\texttt{10}" & $3$ \\ \hline
+  \texttt{1} $2$ & "\texttt{1011}" & "\texttt{01}", "\texttt{011}", "\texttt{11}" & $6$ \\ \hline
+  \texttt{0} $1$ & "\texttt{10110}" & "\texttt{110}" & $7$ \\ \hline
+  \texttt{1} $2$ & "\texttt{1011011}" & 없음 & $7$ \\ \hline
+  \texttt{1} $2$ & "\texttt{101101111}" & "\texttt{0111}", "\texttt{01111}", "\texttt{111}", "\texttt{1111}" & $11$ \\ \hline
+\end{tabular}

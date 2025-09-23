@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="19" short-name="unique-dag-set" url="https://polygon.codeforces.com/p6y7Y1N/chromate00/unique-dag-set">
+    <names>
+        <name language="korean" value="수상자 수 결정하기"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="korean" mathjax="true" path="statements/korean/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="korean" mathjax="true" path="statements/.html/korean/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>4000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>96</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="1" method="manual" points="0.0" sample="true"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="11.0"/>
+                <test cmd="gen_rand 5 20 30" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rand 3 20 40" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rand 2 20 50" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rand 2 20 100" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 20 20" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 20 30" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 20 40" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 20 60" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 20 100" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 20 200" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 20 300" group="2" method="generated" points="13.0"/>
+                <test cmd="gen_rand 30 200 400" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 30 200 800" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 30 200 1600" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 30 200 3200" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 5 200 400" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 5 200 800" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 5 200 1600" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 5 200 3200" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 5 200 6400" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 199" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 1600" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 3200" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 6000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 10000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 20000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 25000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 30000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 35000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 55000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200 40000" group="3" method="generated" points="17.0"/>
+                <test cmd="gen_rand 100 2000 5000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 100 2000 10000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 100 2000 15000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 100 2000 20000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 100 2000 15000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 100 2000 20000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 30 2000 5000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 30 2000 10000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 30 2000 15000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 30 2000 20000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 10 2000 5000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 10 2000 10000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 10 2000 15000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 10 2000 20000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 10 2000 15000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 10 2000 20000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 2000 5000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 2000 10000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 2000 15000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 2000 20000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 2000 5000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 2000 10000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 2000 15000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 2000 20000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 2000 30000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 2000 50000" group="4" method="generated" points="21.0"/>
+                <test cmd="gen_rand 1000 300000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1000 200000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1000 300000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand 100 200000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand 100 300000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 100 200000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 100 300000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand 10 200000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand 10 300000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 10 200000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 10 300000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 100000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 200000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand 1 300000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 10000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 20000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 30000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 40000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 50000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 100000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 200000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallwidth 1 300000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallerwidth 1 50000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallerwidth 1 100000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallerwidth 1 150000 500000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rand_smallerwidth 1 200000 500000 fdsfdfdsesfdscvsdgr" group="5" method="generated" points="38.0"/>
+                <test cmd="gen_rand_smallerwidth 1 300000 500000 grfgdSZfdsfdsfrfdsf" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_ladder 150000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_ladder 200000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_ladder 250000" group="5" method="generated" points="0.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="1" points-policy="each-test"/>
+                <group feedback-policy="points" name="2" points-policy="each-test">
+                    <dependencies>
+                        <dependency group="1"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="3" points-policy="each-test">
+                    <dependencies>
+                        <dependency group="2"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="4" points-policy="each-test"/>
+                <group feedback-policy="points" name="5" points-policy="each-test">
+                    <dependencies>
+                        <dependency group="3"/>
+                        <dependency group="4"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statement_unique-dag-set.md"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/subtask_allocation.txt"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen_ladder.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/gen_rand.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/gen_rand_smallerwidth.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/gen_rand_smallwidth.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/vald.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::wcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/vald.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="time-limit-exceeded-or-memory-limit-exceeded">
+                <source path="solutions/bitset.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/fast.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/poro_wa.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="graphs"/>
+    </tags>
+</problem>

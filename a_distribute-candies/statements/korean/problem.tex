@@ -1,0 +1,59 @@
+\begin{problem}{사탕 나눠주기}{standard input}{standard output}{2 seconds}{256 megabytes}
+
+오늘 여러분은 지금 가지고 있는 사탕을 친구와 나눠 먹기로 했습니다.
+
+여러분은 총 $2\times N$개의 사탕을 가지고 있으며, $i$번째 사탕은 맛의 종류를 나타내는 수 $a_i$를 가지고 있습니다.
+
+여러분은 가지고 있는 사탕 중 $N$개를 친구에게 나눠주려고 합니다.
+
+그런데, 같은 맛의 사탕을 여러 개 먹으면 쉽게 질리기 때문에, 여러분과 친구 모두 같은 종류의 사탕을 $2$개 가지고 있는 것을 좋아하지 않습니다.
+
+과연 여러분과 친구 모두 서로 다른 종류의 사탕 $N$개를 가지고 있도록 친구에게 $N$개의 사탕을 줄 수 있을까요?
+
+\InputFile
+첫 번째 줄에 양의 정수 $N$이 주어집니다.
+
+두 번째 줄에 사탕의 종류를 나타내는 $2 \times N$개의 정수 $a_1,a_2,\ldots,a_{2N}$이 공백으로 구분되어 주어집니다.
+
+\OutputFile
+여러분과 친구 모두 서로 다른 종류의 사탕 $N$개를 가지고 있도록 할 수 있다면 ``\texttt{Yes}''를, 아니면 ``\texttt{No}''를 한 줄에 출력합니다.
+
+\Scoring
+제한:
+
+\begin{itemize}
+\item $1 \le N \le 100\,000$
+\item $1 \le a_i \le 2\times N$
+\end{itemize}
+
+서브태스크:
+
+
+\begin{tabular}{|l|l|l|} \hline
+  \textbf{번호} & \textbf{배점} & \textbf{제한} \\ \hline
+  1 & 19 & $N \le 100$ \\ \hline
+  2 & 37 & $N \le 3000$ \\ \hline
+  3 & 44 & 추가 제한 없음 \\ \hline
+\end{tabular}
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\end{example}
+
+\Note
+첫 번째 예제에서 친구에게 $1$번째, $2$번째, $4$번째 사탕을 주면 여러분과 친구가 가진 사탕의 종류는 다음과 같습니다.
+
+\begin{itemize}
+\item 여러분: $2,3,4$
+\item 친구: $1,2,3$
+\end{itemize}
+
+따라서 첫 번째 예제에서는 여러분과 친구 모두 서로 다른 종류의 사탕 $N$개를 가질 수 있습니다.
+
+두 번째 예제에서는 여러분과 친구 모두 서로 다른 종류의 사탕 $N$개를 가지고 있도록 할 수 없습니다.
+
+\end{problem}
+

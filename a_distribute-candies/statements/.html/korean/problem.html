@@ -1,0 +1,27 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>사탕 나눠주기</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">사탕 나눠주기</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>2 seconds</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>오늘 여러분은 지금 가지고 있는 사탕을 친구와 나눠 먹기로 했습니다.</P><P>여러분은 총 $$$2\times N$$$개의 사탕을 가지고 있으며, $$$i$$$번째 사탕은 맛의 종류를 나타내는 수 $$$a_i$$$를 가지고 있습니다.</P><P>여러분은 가지고 있는 사탕 중 $$$N$$$개를 친구에게 나눠주려고 합니다.</P><P>그런데, 같은 맛의 사탕을 여러 개 먹으면 쉽게 질리기 때문에, 여러분과 친구 모두 같은 종류의 사탕을 $$$2$$$개 가지고 있는 것을 좋아하지 않습니다.</P><P>과연 여러분과 친구 모두 서로 다른 종류의 사탕 $$$N$$$개를 가지고 있도록 친구에게 $$$N$$$개의 사탕을 줄 수 있을까요?</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>첫 번째 줄에 양의 정수 $$$N$$$이 주어집니다.</P><P>두 번째 줄에 사탕의 종류를 나타내는 $$$2 \times N$$$개의 정수 $$$a_1,a_2,\ldots,a_{2N}$$$이 공백으로 구분되어 주어집니다.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>여러분과 친구 모두 서로 다른 종류의 사탕 $$$N$$$개를 가지고 있도록 할 수 있다면 "<SPAN class="tex-font-style-tt">Yes</SPAN>"를, 아니면 "<SPAN class="tex-font-style-tt">No</SPAN>"를 한 줄에 출력합니다.</P></DIV><P></P><P></P><DIV class="scoring"><DIV class="section-title">Scoring</DIV><P></P><P>제한:</P><P></P><UL> <LI> $$$1 \le N \le 100\,000$$$ </LI><LI> $$$1 \le a_i \le 2\times N$$$ </LI></UL><P></P><P>서브태스크:</P><P><TABLE class="tex-tabular"><TBODY><TR><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom"><SPAN class="tex-font-style-bf">번호</SPAN></TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom"><SPAN class="tex-font-style-bf">배점</SPAN></TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom"><SPAN class="tex-font-style-bf">제한</SPAN></TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">1</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">19</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$N \le 100$$$</TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">2</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">37</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$N \le 3000$$$</TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">3</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">44</TD><TD class="tex-tabular-border-left tex-tabular-text-align-left tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">추가 제한 없음</TD></TR></TBODY></TABLE></P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Examples</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="3
+1 2 2 3 3 4
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">3</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 2 2 3 3 4</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+Yes
+</PRE></DIV><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="3
+1 2 3 3 3 4
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">3</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 2 3 3 3 4</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+No
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>첫 번째 예제에서 친구에게 $$$1$$$번째, $$$2$$$번째, $$$4$$$번째 사탕을 주면 여러분과 친구가 가진 사탕의 종류는 다음과 같습니다.</P><P></P><UL> <LI> 여러분: $$$2,3,4$$$ </LI><LI> 친구: $$$1,2,3$$$ </LI></UL><P></P><P>따라서 첫 번째 예제에서는 여러분과 친구 모두 서로 다른 종류의 사탕 $$$N$$$개를 가질 수 있습니다.</P><P>두 번째 예제에서는 여러분과 친구 모두 서로 다른 종류의 사탕 $$$N$$$개를 가지고 있도록 할 수 없습니다.</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

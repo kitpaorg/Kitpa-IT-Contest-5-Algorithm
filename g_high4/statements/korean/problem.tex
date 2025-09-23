@@ -1,0 +1,57 @@
+\begin{problem}{해적왕 진흥이}{standard input}{standard output}{5 seconds}{1024 megabytes}
+
+진흥이가 있는 바다 위에 $R \times C$ 크기의 격자가 있습니다. 격자의 위에서부터 $i$번째 행, 왼쪽에서부터 $j$번째 열에 위치한 칸을 $(i, j)$라고 정의합시다. 진흥이는 $(1, 1)$에서 출발해 $(R, C)$에 도착하려고 합니다. 진흥이는 \textbf{오른쪽이나 아래쪽으로 한 번에 한 칸씩만} 이동할 수 있습니다.
+
+격자의 일부 칸에는 보물이 묻혀 있습니다. 보물이 있는 칸은 총 $N$개이며, 각 $i=1,2,\ldots,N$에 대하여 칸 $(x_i, y_i)$에 $v_i$개의 보물이 묻혀 있습니다. 진흥이가 보물이 묻혀 있는 칸에 도착하면 그 칸의 보물을 모두 얻을 수 있습니다. 
+
+또한 격자에는 $M$개의 위험 구역이 있습니다. 각 위험 구역은 네 개의 정수 $(u_i, l_i, d_i, r_i)$로 표현되며, 이는 진흥이가 직사각형 범위 $u_i \le x \le d_i$, $l_i \le y \le r_i$에 속하는 칸 $(x, y)$를 지나갈 수 없음을 의미합니다. 이때 위험 구역이 진흥이의 시작점 $(1, 1)$과 도착점 $(R, C)$를 포함하지 않음이 보장됩니다. 
+
+진흥이는 이 격자에서 최대한 많은 보물을 얻고 부자가 된 다음, 하루 종일 청소년 IT경시대회 문제를 풀며 노는 인생을 살고 싶어합니다. 진흥이가 $(R,C)$에 도착할 수 있는지 판단하고, 도착할 수 있다면 진흥이가 가져갈 수 있는 \textbf{보물의 최대 개수}를 구해 주세요.
+
+\InputFile
+첫 번째 줄에 네 정수 $R$, $C$, $N$, $M$이 주어집니다.
+
+다음 $N$개의 줄 각각에는 보물의 정보를 나타내는 세 정수 $x_i$, $y_i$, $v_i$가 주어집니다. 이는 $(x_i, y_i)$에 $v_i$개의 보물이 묻혀 있음을 의미합니다.
+
+다음 $M$개의 줄 각각에는 각 위험 구역을 나타내는 네 정수 $u_j$, $l_j$, $d_j$, $r_j$가 주어집니다.
+
+\OutputFile
+진흥이가 $(R,C)$에 도착할 수 있다면 진흥이가 가져갈 수 있는 보물의 최대 개수를 한 줄에 출력합니다.
+
+진흥이가 $(R,C)$에 도착할 수 없다면 한 줄에 $-1$을 출력합니다.
+
+\Scoring
+제한:
+
+\begin{itemize}
+\item $1 \le R,C,N \le 200\,000$
+\item $0 \le M \le 200\,000$
+\item $1 \le x_i \le R$, $1 \le y_i \le C$
+\item $1 \le v_i \le 1000$
+\item $1 \le u_j \le d_j \le R$
+\item $1 \le l_j \le r_j \le C$
+\item 각 보물의 위치는 서로 다릅니다.
+\item 위험 구역이 $(1, 1)$ 또는 $(R, C)$를 포함하지 않습니다.
+\end{itemize}
+
+서브태스크:
+
+\begin{tabular}{|l|l|l|} \hline
+  \textbf{번호} & \textbf{배점} & \textbf{제한} \\ \hline
+  1 & 7 & $R \le 100$, $C \le 100$, $M \le 100$ \\ \hline
+  2 & 9 & $R \le 1000$, $C \le 1000$ \\ \hline
+  3 & 13 & $M=0$ \\ \hline
+  4 & 29 & $M=1$ \\ \hline
+  5 & 42 & 추가 제한 없음 \\ \hline
+\end{tabular}
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\exmpfile{example.03}{example.03.a}%
+\end{example}
+
+\end{problem}
+
